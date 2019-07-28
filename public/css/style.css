@@ -1,0 +1,466 @@
+
+
+/*.................................................ШРИФТЫ.................................................*/
+@font-face {
+    font-family: 'RobotoFam';
+    src: url('../fonts/Roboto/Roboto.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/*.................................................ОБЩИЕ СТИЛИ.................................................*/
+
+html {
+     overflow-x: hidden;
+}
+* {
+    font-family: RobotoFam;
+
+    padding: 0;
+    margin: 0;
+}
+.title_small {
+    font-size: 11px;
+}
+
+
+body {
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  
+}
+
+table {
+    width: 300px;
+    height: 150px;
+    margin: 40 0;
+}
+
+tr {
+    
+   
+}
+
+td {
+   
+    
+}
+
+
+section {
+    margin: 20px 0;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+
+
+h1 {
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 500;
+    text-align: left;
+}
+
+
+
+
+
+
+
+/*1.САЙДБАР.................................................*/
+
+
+
+.sidebar {
+    border:1px solid black;
+    border-radius: 3px;
+    margin: 24 20;
+}
+
+.sidebar li a {
+    font-size: 14px;
+    color: #000;
+
+}
+
+.sidebar ul, h2 {
+    margin-left: 24px;
+    margin-top: 24px;
+}
+
+
+
+.sidebar ul li {
+      margin-bottom: 10px;
+}
+
+.sidebar_category {
+    border: 2px black;
+}
+
+
+
+/*2.ХЕДЭР....................................................*/
+
+
+
+.top_header {
+    margin:15 0;
+}
+
+
+
+.navbar {
+    
+    width: 100%
+}
+
+ul.navbar-nav {
+    margin-left: 28%;
+}
+
+.head_slogan {
+    font-size: 14px;
+}
+
+
+.menu_bar {
+    box-shadow: 0 0 5px 2px #bcbcbc;
+   /* border-style:solid none ;
+    border-width: 1px;*/
+
+
+}
+
+.logo {
+    width: 80%;
+}
+
+.nav_bar_search {
+    width: 16vw;
+}
+
+.header_nav a.nav-link {
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+    margin-right: 20px;
+    background-color: white;
+
+    transition: background-color, 500ms;
+
+    
+}
+
+.header_nav a.nav-link:hover {
+    
+    text-decoration: underline;
+    background-color: #b2b2b2;
+}
+
+.header_img {
+    width: 100%;
+}
+
+.title {
+    font-size: 40px;
+    margin-left: 24px;
+}
+
+.title .under_title {
+    font-size: 35px;
+    margin: 0;
+}
+
+.social_icons {
+    margin-left: 10px;
+}
+
+.phone_number {
+    margin-left: 20%;
+    text-align: right;
+    font-size: 24px;
+}
+/*3.ФУТТЕР.................................................*/
+
+footer {
+    color: white;
+    background-color: #505050;
+    padding: 30 0;
+}
+
+footer a {
+    font-size: 12px;
+    color: #c9c9c9;
+    transition: all 500 ease;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer h5 {
+    font-size: 16px;
+}
+
+footer hr {
+    background-color: #c9c9c9;
+}
+
+/*.................................................ГЛАВНАЯ.................................................*/
+.main {
+
+}
+
+/*.................................................КАТАЛОГ.................................................*/
+
+.popup {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #ff5252;
+    color: #fff;
+
+}
+
+.js-popup {
+    display: none;
+    
+}
+
+.js-popup-2 {
+    display: none;
+}
+
+.popup_material {
+    display: none;
+}
+.popup_gem {
+    display: none;
+}
+
+.ty {
+    display: none;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.close_popup {
+    position: absolute;
+    top: 15px;
+
+    right: 15px;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+
+}
+.close_popup:before {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    height: 1px;
+    width: 31px;
+    top: 11px;
+    left: -4px;
+    transform: rotate(-45deg);
+}
+.close_popup:after {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    height: 1px;
+    width: 31px;
+    top: 11px;
+    transform: rotate(45deg);
+    left: -4px;
+}
+.catalog a {
+    text-align: center;
+    color:black;
+    text-decoration: none;
+}
+.catalog h4 {
+    font-size: 18px;
+}
+
+h5.product_name {
+    color: black;
+    font-size: 16px;
+
+}
+section.catalog_category a {
+    text-decoration: none;
+}
+
+button.add-to-cart {
+     width: 90%;
+     margin-bottom: 10px;
+}
+
+button.incart_button {
+    display: none;
+    background-color: green;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+button.js-order_button {
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+button.pagination {
+    padding-left: 12px;
+    margin-left: 5px;
+    width: 35px;
+    height:   35px;
+}
+
+
+.product_card {
+    margin-bottom: 10px;
+}
+img.product_card_img {
+    width: 90%;
+}
+
+input:invalid:not(:placeholder-shown) {border-color: red;}
+input:valid:not(:placeholder-shown) {border-color: green;}
+
+
+/*.................................................ДОСТАВКА.................................................*/
+/*.................................................ОТЗЫВЫ.................................................*/
+section.comments {
+    margin: 20px 0 20px 20px;
+}
+
+div.comment {
+    background-color: #c4c4c4;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    margin:20 0 20 0;
+}
+
+.comment_name {
+    background-color: #858585;
+    padding: 5 0 5 5;
+    border-radius:  5px ;
+}
+
+.comment_text {
+    padding: 5 0 5 5;
+}
+
+
+
+/*.................................................О НАС.................................................*/
+
+
+section.about_us h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+/*.................................................КАК ЗАКАЗАТЬ.................................................*/
+/*.................................................БЛОГ.................................................*/
+/*.................................................ГАРАНТИИ.................................................*/
+/*.................................................АКЦИИ.................................................*/
+/*.................................................КОРЗИНА.................................................*/
+.cart_main 
+
+section.cart table {
+    font-size: 12px;
+}
+
+section.cart table td {
+    margin: 0;
+    padding: 0;
+}
+
+section.cart p b {
+    font-size: 20px;
+}
+
+section.cart_checkout input.btn {
+    background-color: #ff9947;
+    width:100%;
+    padding:20 0;
+}
+
+
+
+button.set_order {
+    width:100%;
+    padding:20 0;
+    background-color: #ff9947;
+}
+
+
+
+
+/*.................................................АДАПТАЦИЯ.................................................*/
+@media (min-width: 992px) {
+
+   .navbar {
+    height: 40px;
+    }
+    
+    
+
+    
+}
+@media (max-width: 800px) {
+
+    .sidebar {
+    display: none;
+
+}
+}
+
+
+@media (max-width: 1126px) {
+    ul.navbar-nav {
+    margin-left: 20%;
+    }
+
+    .header_nav a.nav-link {
+    margin-right: 5px;
+    padding: 5px;
+    }
+
+
+}
